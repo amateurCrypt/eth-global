@@ -1,0 +1,350 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_defaultCurrency",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_optimisticOracleV3",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "dataId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "data",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "asserter",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "assertionId",
+						"type": "bytes32"
+					}
+				],
+				"name": "DataAsserted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "dataId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "data",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "asserter",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "assertionId",
+						"type": "bytes32"
+					}
+				],
+				"name": "DataAssertionResolved",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "dataId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "data",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "asserter",
+						"type": "address"
+					}
+				],
+				"name": "assertDataFor",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "assertionId",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "assertionId",
+						"type": "bytes32"
+					}
+				],
+				"name": "assertionDisputedCallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "assertionLiveness",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "assertionId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "assertedTruthfully",
+						"type": "bool"
+					}
+				],
+				"name": "assertionResolvedCallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "assertionsData",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "dataId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "data",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "asserter",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "resolved",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "defaultCurrency",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "defaultIdentifier",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "assertionId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "oo",
+				"outputs": [
+					{
+						"internalType": "contract OptimisticOracleV3Interface",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/DataAsserter.sol": "DataAsserter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5",
+				"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+			"keccak256": "0xec63854014a5b4f2b3290ab9103a21bdf902a508d0f41a8573fea49e98bf571a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc5b5dc12fbc4002f282eaa7a5f06d8310ed62c1c77c5770f6283e058454c39a",
+				"dweb:/ipfs/Qme9rE2wS3yBuyJq9GgbmzbsBQsW2M2sVFqYYLw7bosGrv"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+			"keccak256": "0x909d608c2db6eb165ca178c81289a07ed2e118e444d0025b2a85c97d0b44a4fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://656cda26512ddd7373c2d5551c8fae759fc30f05b10f0fc2e738e9274199dbd4",
+				"dweb:/ipfs/QmTSArSzQRFbQmHgq7U1PZXnsDFhvDZhKVu9CzMG4yo6Lx"
+			]
+		},
+		"@openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0x006dd67219697fe68d7fbfdea512e7c4cb64a43565ed86171d67e844982da6fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2455248c8ddd9cc6a7af76a13973cddf222072427e7b0e2a7d1aff345145e931",
+				"dweb:/ipfs/QmfYjnjRbWqYpuxurqveE6HtzsY1Xx323J428AKQgtBJZm"
+			]
+		},
+		"@uma/core/contracts/common/implementation/AncillaryData.sol": {
+			"keccak256": "0x8ff33ac32d3e6de25de9e0ac2c0ff9a621f187fa97e9ee84092b327471baa3ce",
+			"license": "AGPL-3.0-only",
+			"urls": [
+				"bzz-raw://0bbaed49756e8cf7ef405e132f441cd7a735ac6186a200b0179147e7d137b74a",
+				"dweb:/ipfs/QmeSBJX5a61LZPxbkUKS2NF4LSxemgDwjD65fCAmyP7PX2"
+			]
+		},
+		"@uma/core/contracts/optimistic-oracle-v3/implementation/ClaimData.sol": {
+			"keccak256": "0xf8427cb144e47a47625df27e5182bd8f3774becf23d67fd16e51599bd1386bc5",
+			"license": "AGPL-3.0-only",
+			"urls": [
+				"bzz-raw://63d4212d86dfc755e5eead59e05038aaf889be3e9daee9fd9a8070825c7b8b8f",
+				"dweb:/ipfs/QmQ87qqtqhSQdfdEjT3wPGSitQ9uPoyYToVu9WTECqYsQP"
+			]
+		},
+		"@uma/core/contracts/optimistic-oracle-v3/interfaces/OptimisticOracleV3Interface.sol": {
+			"keccak256": "0x06c16f033cb100a20286b0f9c866a33a227a9e534544d5da6e5e20103d182d00",
+			"license": "AGPL-3.0-only",
+			"urls": [
+				"bzz-raw://a354805eab907d5e9e7910f66ef5c5c5594bb5144a77541d6d30c6cb3cbd6871",
+				"dweb:/ipfs/QmTfUDPJrsuUQ2aPwsbQwTaSvjUzBQFvFxXtmscZFymM4X"
+			]
+		},
+		"src/DataAsserter.sol": {
+			"keccak256": "0x35e8d564ea6f622658bf2cfc66ad4e76db991d4211771c0b342321a01af23450",
+			"license": "AGPL-3.0-only",
+			"urls": [
+				"bzz-raw://7ba616f349870057d19fd7c2a76ec312d882db29f538d87b99d0755391bfc3f5",
+				"dweb:/ipfs/QmbdxHvLw3KVoX3zVvmbjDAKmPXhsB6RgoPqeHv1JfuXU6"
+			]
+		}
+	},
+	"version": 1
+}
