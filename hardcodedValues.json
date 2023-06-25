@@ -1,0 +1,24 @@
+{
+    "Centralization": { 
+        "stETH": ["43"], 
+        "wETH": ["18"],
+        "AAVE": ["28"]
+    },
+    "CrossLiquidation": {
+        "stETH": ["81"],
+        "wETH": ["67"],
+        "AAVE": ["44"]
+    },
+    "Exposure": {
+        "AAVE": {
+            "stETH": ["46"],
+            "wETH": ["14"],
+            "AAVE": ["2"]
+        },
+        "Compound": {
+            "stETH": ["0"],
+            "wETH": ["35"],
+            "AAVE": ["1"]
+        }
+    }
+    }
