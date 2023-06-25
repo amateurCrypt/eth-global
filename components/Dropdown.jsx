@@ -19,13 +19,6 @@ export default function Dropdown() {
 
     return (
         <div className="dropdown">
-            {/* <label className="dropdown-label" htmlFor="dropdown-label">Risk Type:</label>  */}
-            {/* <select name="" id="dropdown-name"> 
-                <option id='image-el' value="">Select an option</option>
-                <option value="aave">Chain liquidation</option> 
-                <option value="compound">Centralization</option> 
-                <option value="uniswap">Platform risk</option> 
-            </select> */}
             <RiskPercent />
 
           <label className="dropdown-label" htmlFor="dropdown-el">Lending Protocol</label> 
