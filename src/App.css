@@ -112,3 +112,8 @@
 span {
   font-weight: bolder;
 }
+
+.exposure {
+  display: flex;
+  flex-direction: column;
+}

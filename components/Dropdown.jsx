@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import RiskPercent from "./Risk-percent"
 
-
-
 export default function Dropdown() {
 
   const [selectedValue, setSelectedValue] = useState('');
