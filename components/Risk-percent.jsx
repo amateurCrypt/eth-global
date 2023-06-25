@@ -1,4 +1,4 @@
-
+import values from '../hardcodedValues.json';
 
 function myFunction() {
     let risk = document.getElementById("risk-select").value;
@@ -14,11 +14,19 @@ export default function RiskPercent() {
     return (
         <div className="risk-el">
             <label className="dropdown-label" htmlFor="dropdown-label">Risk Type:</label>
+
             <select id="risk-select" onChange={myFunction}>
+
                 <option id='image-el' value="">Select an option</option>
-                <option value="10%">Chain liquidation</option>
-                <option value="7.9%">Centralization</option>
-                <option value="4.9%">Platform risk</option>
+                <option value={` ${values.Centralization.stETH}%`}>Centralization</option>
+                <option value={`${values.CrossLiquidation.wETH}%`}>Cross liquidation</option>
+
+                <option
+                    className='exposure'
+                    value={`AAVE: stETH: ${values.Exposure.AAVE.stETH} wETH: ${values.Exposure.AAVE.wETH} AAVE: ${values.Exposure.AAVE.AAVE} `}>
+                    Exposure
+                    </option>
+                
             </select>
 
             <div className="risk-text">
