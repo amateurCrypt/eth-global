@@ -66,10 +66,11 @@
   padding: 15px;
   border: 1px solid white;
   margin: 10px;
+  border-radius: 10px;
 }
 
 .dropdown-label {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 #dropdown-name {
@@ -79,20 +80,7 @@
   margin-right: 10px;
 }
 
-/* .image {
-  border: 1px solid red;
-  width: 30em;
-  height: 30em;
-} */
-
-/* #image-el {
-  width: 50px;
-  height: 50px;
-  border: 1px solid red;
-} */
-
 .protocol-image {
-    /* float: left; */
     width:  250px;
     height: 250px;
     object-fit: cover;
@@ -102,8 +90,14 @@
 }
 
 .risk-el {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-bottom: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#risk-select {
+  padding: 10px;
   border-radius: 5px;
   margin-right: 10px;
 }
