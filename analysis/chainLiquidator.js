@@ -18,11 +18,35 @@ const aaveSubgraph = `https://gateway.thegraph.com/api/${GRAPH_API_KEY}/subgraph
 const compoundSubgraph = `https://gateway.thegraph.com/api/${GRAPH_API_KEY}/subgraphs/id/6tGbL7WBx287EZwGUvvcQdL6m67JGMJrma3JSTtt5SV7`;
 
 const aavePositionSchema = {
-
+  {
+    position(id: "") {
+      balance
+      isCollateral
+      deposits {
+        amount
+      }
+      side
+      repays {
+        amount
+      }
+    }
+  }
 }
 
 const compoundPositionSchema = {
-
+  {
+    position(id: "") {
+      balance
+      isCollateral
+      deposits {
+        amount
+      }
+      side
+      repays {
+        amount
+      }
+    }
+  }
 }
 
 const tokenDistributionSchema = {
