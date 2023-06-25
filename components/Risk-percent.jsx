@@ -23,9 +23,9 @@ export default function RiskPercent() {
 
                 <option
                     className='exposure'
-                    value={`AAVE: stETH: ${values.Exposure.AAVE.stETH} wETH: ${values.Exposure.AAVE.wETH} AAVE: ${values.Exposure.AAVE.AAVE} `}>
+                    value={`AAVE stETH: ${values.Exposure.AAVE.stETH} wETH: ${values.Exposure.AAVE.wETH} AAVE: ${values.Exposure.AAVE.AAVE}`}>
                     Exposure
-                    </option>
+                </option>
                 
             </select>
 
